@@ -10,8 +10,12 @@
 </head>
 <body>
 
-  <header class="header">
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orbit"></div>
 
+  <header class="header">
     <div class="logo">
       <div class="logo-icon">D</div>
       <span>DINAMIK <b>LEADS</b></span>
@@ -23,12 +27,12 @@
       <a href="#descargar">Descargar</a>
       <a href="#soporte">Soporte</a>
     </nav>
-
   </header>
 
   <main>
 
     <section class="hero" id="descargar">
+      <div class="hero-lines"></div>
 
       <div class="badge">
         SOFTWARE DE GESTIÓN DE LEADS
@@ -39,69 +43,101 @@
       </h1>
 
       <p>
-        Gestiona tus leads, seguimientos y ventas
-        de forma simple, rápida y eficiente.
+        Gestiona tus leads, seguimientos y ventas de forma simple,
+        rápida y eficiente.
       </p>
 
-      <!-- BOTÓN DESCARGA -->
       <a
         class="download-btn"
+        id="btnDescargar"
         href="./versiones/Dinamik-Leads.apk"
         download
       >
-        ⬇ Descargar Dinamik Leads
+        <span>⬇</span>
+        Descargar Dinamik Leads
       </a>
 
       <small>
-        Compatible con Android / Windows 10 y 11
+        🤖 Android &nbsp;|&nbsp; 🪟 Windows 10 y 11
       </small>
 
       <div class="preview-panel">
 
-        <div class="sidebar">
+        <aside class="sidebar">
+          <h3>DINAMIK <span>LEADS</span></h3>
 
-          <h3>
-            DINAMIK <span>LEADS</span>
-          </h3>
+          <button class="active">
+            <span class="menu-icon">⌂</span>
+            Dashboard
+          </button>
 
-          <button class="active">Dashboard</button>
-          <button>Leads</button>
-          <button>Seguimientos</button>
-          <button>Calendario</button>
-          <button>Reportes</button>
+          <button>
+            <span class="menu-icon">👤</span>
+            Leads
+          </button>
 
-        </div>
+          <button>
+            <span class="menu-icon">⏱</span>
+            Seguimientos
+          </button>
 
-        <div class="dashboard">
+          <button>
+            <span class="menu-icon">📅</span>
+            Calendario
+          </button>
 
-          <h2>
-            ¡Bienvenido, Vendedor!
-          </h2>
+          <button>
+            <span class="menu-icon">📊</span>
+            Reportes
+          </button>
+        </aside>
+
+        <section class="dashboard">
+
+          <div class="dashboard-header">
+            <h2>¡Bienvenido, Vendedor!</h2>
+
+            <button class="period-btn">
+              📅 Esta semana
+            </button>
+          </div>
 
           <div class="cards">
 
             <div class="card">
-              <p>Nuevos Leads</p>
-              <strong>128</strong>
-              <span>+12% esta semana</span>
+              <div class="card-icon blue-card">👥</div>
+              <div>
+                <p>Nuevos Leads</p>
+                <strong>128</strong>
+                <span>↑ +12% esta semana</span>
+              </div>
             </div>
 
             <div class="card">
-              <p>Pendientes</p>
-              <strong>45</strong>
-              <span>+8% esta semana</span>
+              <div class="card-icon purple-card">⏱</div>
+              <div>
+                <p>Pendientes</p>
+                <strong>45</strong>
+                <span>↑ +8% esta semana</span>
+              </div>
             </div>
 
             <div class="card">
-              <p>En Seguimiento</p>
-              <strong>32</strong>
-              <span>+6% esta semana</span>
+              <div class="card-icon cyan-card">〽</div>
+              <div>
+                <p>En Seguimiento</p>
+                <strong>32</strong>
+                <span>↑ +6% esta semana</span>
+              </div>
             </div>
 
             <div class="card">
-              <p>Ventas</p>
-              <strong>18</strong>
-              <span>+15% esta semana</span>
+              <div class="card-icon green-card">🛒</div>
+              <div>
+                <p>Ventas</p>
+                <strong>18</strong>
+                <span>↑ +15% esta semana</span>
+              </div>
             </div>
 
           </div>
@@ -109,96 +145,87 @@
           <div class="bottom-dashboard">
 
             <div class="chart-box">
-
               <h4>Leads por estado</h4>
 
-              <div class="donut"></div>
+              <div class="chart-content">
+                <div class="donut"></div>
 
+                <div class="chart-legend">
+                  <p><span class="dot blue-dot"></span> Nuevos <b>128</b></p>
+                  <p><span class="dot green-dot"></span> Pendientes <b>45</b></p>
+                  <p><span class="dot yellow-dot"></span> Seguimiento <b>32</b></p>
+                  <p><span class="dot gray-dot"></span> Ventas <b>18</b></p>
+                </div>
+              </div>
             </div>
 
             <div class="leads-box">
-
               <h4>Leads recientes</h4>
 
               <div class="lead-row">
-                <span>Juan Pérez</span>
+                <span>👤 Juan Pérez</span>
                 <b class="tag blue">Nuevo</b>
+                <small>Hace 10 min</small>
               </div>
 
               <div class="lead-row">
-                <span>María López</span>
+                <span>👤 María López</span>
                 <b class="tag gray">Seguimiento</b>
+                <small>Hace 25 min</small>
               </div>
 
               <div class="lead-row">
-                <span>Carlos Gómez</span>
+                <span>👤 Carlos Gómez</span>
                 <b class="tag yellow">Pendiente</b>
+                <small>Hace 1 h</small>
               </div>
 
               <div class="lead-row">
-                <span>Ana Torres</span>
+                <span>👤 Ana Torres</span>
                 <b class="tag green">Venta</b>
+                <small>Hace 2 h</small>
               </div>
-
             </div>
 
           </div>
 
-        </div>
+        </section>
 
       </div>
-
     </section>
 
     <section class="features" id="caracteristicas">
+      <span class="section-label">CARACTERÍSTICAS</span>
 
-      <h2>
-        Todo lo que necesitas para vender más
-      </h2>
+      <h2>Todo lo que necesitas para vender más</h2>
 
       <div class="features-grid">
 
         <div class="feature">
-
-          <div class="feature-icon">👥</div>
-
+          <div class="feature-icon blue-feature">👥</div>
           <h3>Gestión Inteligente</h3>
-
           <p>
-            Organiza tus leads y seguimientos
-            en un solo lugar.
+            Organiza tus leads y seguimientos en un solo lugar.
           </p>
-
         </div>
 
         <div class="feature">
-
-          <div class="feature-icon">📊</div>
-
+          <div class="feature-icon purple-feature">📊</div>
           <h3>Reportes en Tiempo Real</h3>
-
           <p>
-            Mide tu rendimiento y toma decisiones
-            basadas en datos.
+            Mide tu rendimiento y toma decisiones basadas en datos.
           </p>
-
         </div>
 
         <div class="feature">
-
-          <div class="feature-icon">🛡️</div>
-
+          <div class="feature-icon green-feature">🛡️</div>
           <h3>Seguro y Confiable</h3>
-
           <p>
-            Tu información está protegida
-            con altos estándares.
+            Tu información está protegida con altos estándares.
           </p>
-
         </div>
 
       </div>
-
     </section>
 
   </main>
@@ -206,41 +233,49 @@
   <footer class="footer" id="soporte">
 
     <div>
-
-      <h3>
-        DINAMIK <span>LEADS</span>
-      </h3>
+      <div class="footer-logo">
+        <div class="logo-icon">D</div>
+        <h3>DINAMIK <span>LEADS</span></h3>
+      </div>
 
       <p>
-        El sistema de gestión de leads
-        que te ayuda a vender más.
+        El sistema de gestión de leads que te ayuda a vender más.
       </p>
 
+      <div class="socials">
+        <a href="#">f</a>
+        <a href="#">w</a>
+        <a href="#">ig</a>
+      </div>
     </div>
 
     <div>
-
-      <h4>Navegación</h4>
-
-      <a href="#caracteristicas">Características</a>
-      <a href="#descargar">Descargar</a>
-      <a href="#soporte">Soporte</a>
-
+      <h4>NAVEGACIÓN</h4>
+      <a href="#caracteristicas">› Características</a>
+      <a href="#descargar">› Descargar</a>
+      <a href="#soporte">› Soporte</a>
     </div>
 
     <div>
-
-      <h4>Soporte</h4>
-
+      <h4>SOPORTE</h4>
       <p>¿Necesitas ayuda?</p>
 
       <button class="support-btn">
-        Contactar soporte
+        🎧 Contactar soporte
       </button>
-
     </div>
 
   </footer>
+
+  <div class="copyright">
+    <p>© 2025 Dinamik Leads. Todos los derechos reservados.</p>
+
+    <div>
+      <a href="#">Privacidad</a>
+      <span>|</span>
+      <a href="#">Términos</a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 
